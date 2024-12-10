@@ -23,7 +23,7 @@ function Home2() {
               <br />
               <br />I am fluent in classics like
               <i>
-                <b className="purple"> the knowledge to challenge and empower herself in a male-dominated world. </b>
+                <b className="purple"> the knowledge to challenge and empower myself in a male-dominated world. </b>
               </i>
               <br />
               <br />
