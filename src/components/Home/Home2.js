@@ -49,8 +49,6 @@ function Home2() {
               </i>
             </p>
           </Col>
-            </Tilt>
-          </Col>
         </Row>
         <Row>
           <Col md={12} className="home-about-social">
