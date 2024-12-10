@@ -32,7 +32,7 @@ function Home2() {
                 <b className="purple"> </b> and
                 also in areas related to{" "}
                 <b className="purple">
-                  Blockchain.
+                  
                 </b>
               </i>
               <br />
