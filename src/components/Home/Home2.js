@@ -20,33 +20,25 @@ function Home2() {
             <p className="home-about-body">
               I am a bold character who defies societal norms and embraces my own desires.
               <br />
-              <br />I am fluent in classics like
+              <br />
+              I am fluent in classics like
               <i>
                 <b className="purple"> the knowledge to challenge and empower myself in a male-dominated world. </b>
               </i>
               <br />
               <br />
-              
               <i>
-                <b className="purple"> </b> and
-                also in areas related to{" "}
-                <b className="purple">
-                  
-                </b>
+                <b className="purple">JavaScript</b> and also in areas related to{" "}
+                <b className="purple">Node.js</b>.
               </i>
               <br />
               <br />
-               <b className="purple">Node.js</b> and
               <i>
-                <b className="purple">
-                  {" "}
-                  
-                </b>
+                <b className="purple">React</b>, <b className="purple">Frontend Development</b>, and
+                <b className="purple">Backend Technologies</b> are some of my strong areas.
               </i>
-              &nbsp; 
-              <i>
-                <b className="purple"> </b>
-              </i>
+              <br />
+              <br />
             </p>
           </Col>
         </Row>
@@ -54,7 +46,7 @@ function Home2() {
           <Col md={12} className="home-about-social">
             <h1>FIND ME ON</h1>
             <p>
-              Feel free to <span className="purple">connect </span>with me
+              Feel free to <span className="purple">connect</span> with me
             </p>
             <ul className="home-about-social-links">
               <li className="social-icons">
@@ -62,7 +54,7 @@ function Home2() {
                   href="https://github.com/soumyajit4419"
                   target="_blank"
                   rel="noreferrer"
-                  className="icon-colour  home-social-icons"
+                  className="icon-colour home-social-icons"
                 >
                   <AiFillGithub />
                 </a>
@@ -72,7 +64,7 @@ function Home2() {
                   href="https://twitter.com/Soumyajit4419"
                   target="_blank"
                   rel="noreferrer"
-                  className="icon-colour  home-social-icons"
+                  className="icon-colour home-social-icons"
                 >
                   <AiOutlineTwitter />
                 </a>
@@ -82,7 +74,7 @@ function Home2() {
                   href="https://www.linkedin.com/in/soumyajit4419/"
                   target="_blank"
                   rel="noreferrer"
-                  className="icon-colour  home-social-icons"
+                  className="icon-colour home-social-icons"
                 >
                   <FaLinkedinIn />
                 </a>
@@ -104,4 +96,5 @@ function Home2() {
     </Container>
   );
 }
+
 export default Home2;
