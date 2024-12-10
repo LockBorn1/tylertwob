@@ -19,7 +19,7 @@ function Home2() {
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-              The Wife of Bath is a bold character who defies societal norms and embraces her own desires.
+              I am a bold character who defies societal norms and embraces my own desires.
               <br />
               <br />I am fluent in classics like
               <i>
