@@ -20,6 +20,7 @@ function NavBar() {
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
 
+  // Scroll handler to update navbar color when scrolled
   function scrollHandler() {
     if (window.scrollY >= 20) {
       updateNavbar(true);
@@ -38,19 +39,22 @@ function NavBar() {
       className={navColour ? "sticky" : "navbar"}
     >
       <Container>
+        {/* Brand/logo section */}
         <Navbar.Brand href="/" className="d-flex">
           <img src={logo} className="img-fluid logo" alt="brand" />
         </Navbar.Brand>
+        
+        {/* Toggle button for mobile */}
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
-          onClick={() => {
-            updateExpanded(expand ? false : "expanded");
-          }}
+          onClick={() => updateExpanded(expand ? false : "expanded")}
         >
           <span></span>
           <span></span>
           <span></span>
         </Navbar.Toggle>
+        
+        {/* Navbar links */}
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto" defaultActiveKey="#home">
             <Nav.Item>
@@ -102,7 +106,14 @@ function NavBar() {
               </Nav.Link>
             </Nav.Item>
 
-            
+            {/* New Button section fixed */}
+            <Nav.Item>
+              <Button
+                variant="link"
+                href="https://github.com/soumyajit4419"
+                target="_blank"
+                rel="noreferrer"
+                className="d-flex align-items-center"
               >
                 <CgGitFork style={{ fontSize: "1.2em" }} />{" "}
                 <AiFillStar style={{ fontSize: "1.1em" }} />
