@@ -20,7 +20,6 @@ function NavBar() {
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
 
-  // Scroll handler to update navbar color when scrolled
   function scrollHandler() {
     if (window.scrollY >= 20) {
       updateNavbar(true);
@@ -39,22 +38,19 @@ function NavBar() {
       className={navColour ? "sticky" : "navbar"}
     >
       <Container>
-        {/* Brand/logo section */}
         <Navbar.Brand href="/" className="d-flex">
           <img src={logo} className="img-fluid logo" alt="brand" />
         </Navbar.Brand>
-        
-        {/* Toggle button for mobile */}
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
-          onClick={() => updateExpanded(expand ? false : "expanded")}
+          onClick={() => {
+            updateExpanded(expand ? false : "expanded");
+          }}
         >
           <span></span>
           <span></span>
           <span></span>
         </Navbar.Toggle>
-        
-        {/* Navbar links */}
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto" defaultActiveKey="#home">
             <Nav.Item>
@@ -69,7 +65,7 @@ function NavBar() {
                 to="/about"
                 onClick={() => updateExpanded(false)}
               >
-                <AiOutlineUser style={{ marginBottom: "2px" }} /> About The Site
+                <AiOutlineUser style={{ marginBottom: "2px" }} /> About
               </Nav.Link>
             </Nav.Item>
 
@@ -106,14 +102,11 @@ function NavBar() {
               </Nav.Link>
             </Nav.Item>
 
-            {/* New Button section fixed */}
-            <Nav.Item>
+            <Nav.Item className="fork-btn">
               <Button
-                variant="link"
-                href="https://github.com/soumyajit4419"
+                href="https://github.com/soumyajit4419/Portfolio"
                 target="_blank"
-                rel="noreferrer"
-                className="d-flex align-items-center"
+                className="fork-btn-inner"
               >
                 <CgGitFork style={{ fontSize: "1.2em" }} />{" "}
                 <AiFillStar style={{ fontSize: "1.1em" }} />
